@@ -35,7 +35,7 @@ export default function FAQsection() {
              Quanto costa iscriversi?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-              Niente! L'iscrizione è gratuita. Paghi una piccola commissione solo se ricevi una prenotazione. Nessun abbonamento o costo fisso.
+              Niente! Paghi una piccola commissione solo se ricevi una prenotazione. Nessun abbonamento o costo fisso.
            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
