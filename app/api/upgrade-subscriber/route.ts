@@ -1,11 +1,11 @@
 // app/api/upgrade-subscriber/route.ts
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
 const MAILERLITE_API_TOKEN = process.env.MAILERLITE_API_TOKEN
 const GROUP_ID_STEP_1 = process.env.MAILERLITE_GROUP_ID_STEP_1
 const GROUP_ID_STEP_2 = process.env.MAILERLITE_GROUP_ID_STEP_2
 
-export async function POST(req) {
+export async function POST(req: NextRequest) {
   try {
     const { email } = await req.json();
 
@@ -29,7 +29,7 @@ export async function POST(req) {
     const subscriberId = subscriberData.data.id;
     const groups = subscriberData.data.groups || [];
 
-    const isInGroup1 = groups.some((g) => g.id === GROUP_ID_STEP_1);
+    const isInGroup1 = groups.some((g: { id: string }) => g.id === GROUP_ID_STEP_1);
 
     if (!isInGroup1) {
       return NextResponse.json({ error: 'Utente non fa parte del primo gruppo' }, { status: 400 });

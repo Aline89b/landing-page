@@ -1,10 +1,10 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 // Credenziali MailerLite dalle variabili ambiente
 const MAILERLITE_API_TOKEN = process.env.MAILERLITE_API_TOKEN;
 const MAILERLITE_GROUP_ID_STEP_1 = process.env.MAILERLITE_GROUP_ID_STEP_1;
 
-export async function POST(request) {
+export async function POST(request: NextRequest) {
   try {
     const { email } = await request.json();
 

@@ -124,7 +124,7 @@ export default function CTA() {
           <Checkbox 
             id="terms" 
             checked={isChecked}
-            onCheckedChange={setIsChecked}
+            onCheckedChange={(checked) => setIsChecked(checked === true)}
             className="data-[state=checked]:bg-[#2B9720] data-[state=checked]:border-[#2B9720]"
             disabled={isLoading}
           />
