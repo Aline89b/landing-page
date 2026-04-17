@@ -41,7 +41,7 @@ export default function ThankYouPage() {
       }
 
       // Redirect al sito WordPress (modifica con l'URL corretto)
-      router.push(`https://slowtravel.local/?email=${encodeURIComponent(email as string)}`);
+      router.push(`https://slow-travel.vercel.app/registrati?email=${encodeURIComponent(email as string)}`);
     } catch (err) {
       console.error(err);
       setError("Errore imprevisto");
