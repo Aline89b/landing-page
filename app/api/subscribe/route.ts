@@ -37,13 +37,14 @@ export async function POST(request: NextRequest) {
     const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${BREVO_API_KEY}`,
-        'Accept': 'application/json',
-      },
+  'Content-Type': 'application/json',
+  'api-key': BREVO_API_KEY!,
+  'Accept': 'application/json',
+},
       body: JSON.stringify({
         email: email,
         listIds: [BREVO_LIST_ID],
+         updateEnabled: true
       }),
     });
 
