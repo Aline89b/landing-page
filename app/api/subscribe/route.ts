@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// Credenziali MailerLite dalle variabili ambiente
-const MAILERLITE_API_TOKEN = process.env.MAILERLITE_API_TOKEN;
-const MAILERLITE_GROUP_ID_STEP_1 = process.env.MAILERLITE_GROUP_ID_STEP_1;
+// Credenziali Brevo dalle variabili ambiente
+const BREVO_API_KEY = process.env.BREVO_API_KEY;
+const BREVO_LIST_ID = 5; // 1step- LEAD list ID
 
 export async function POST(request: NextRequest) {
   try {
@@ -25,41 +25,40 @@ export async function POST(request: NextRequest) {
     }
 
     // Controllo variabili ambiente
-    if (!MAILERLITE_API_TOKEN || !MAILERLITE_GROUP_ID_STEP_1) {
-      console.error('MailerLite credentials missing');
+    if (!BREVO_API_KEY) {
+      console.error('Brevo API key missing');
       return NextResponse.json(
         { error: 'Configurazione server non valida' },
         { status: 500 }
       );
     }
 
-    // Chiamata a MailerLite API
-    const response = await fetch('https://connect.mailerlite.com/api/subscribers', {
+    // Chiamata a Brevo API per aggiungere contatto alla lista
+    const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${MAILERLITE_API_TOKEN}`,
+        'Authorization': `Bearer ${BREVO_API_KEY}`,
         'Accept': 'application/json',
       },
       body: JSON.stringify({
         email: email,
-        groups: [MAILERLITE_GROUP_ID_STEP_1],
-        status: 'active',
+        listIds: [BREVO_LIST_ID],
       }),
     });
 
     const data = await response.json();
 
     if (!response.ok) {
-      // Gestione errori specifici MailerLite
-      if (response.status === 422 && data.errors?.email) {
+      // Gestione errori specifici Brevo
+      if (response.status === 400 && data.message?.includes('already exists')) {
         return NextResponse.json(
           { error: 'Questa email è già iscritta' },
           { status: 400 }
         );
       }
       
-      console.error('MailerLite error:', data);
+      console.error('Brevo error:', data);
       return NextResponse.json(
         { error: 'Errore durante l\'iscrizione' },
         { status: 500 }
@@ -67,7 +66,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(
-      { message: 'Iscrizione completata con successo', subscriber: data.data },
+      { message: 'Iscrizione completata con successo', subscriber: data },
       { status: 200 }
     );
 
