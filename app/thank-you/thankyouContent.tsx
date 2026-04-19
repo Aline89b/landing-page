@@ -25,20 +25,6 @@ export default function ThankYouPage() {
     setError("");
 
     try {
-      const res = await fetch("/api/upgrade-subscriber", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        setError(data.error || "Errore durante il passaggio al gruppo 2");
-        return;
-      }
 
       // Redirect al sito WordPress (modifica con l'URL corretto)
       router.push(`https://slow-travel.vercel.app/registrati?email=${encodeURIComponent(email as string)}`);

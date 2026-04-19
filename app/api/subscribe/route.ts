@@ -35,18 +35,18 @@ export async function POST(request: NextRequest) {
 
     // Chiamata a Brevo API per aggiungere contatto alla lista
     const response = await fetch('https://api.brevo.com/v3/contacts', {
-      method: 'POST',
-      headers: {
-  'Content-Type': 'application/json',
-  'api-key': BREVO_API_KEY!,
-  'Accept': 'application/json',
-},
-      body: JSON.stringify({
-        email: email,
-        listIds: [BREVO_LIST_ID],
-         updateEnabled: true
-      }),
-    });
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'api-key': BREVO_API_KEY!,
+    'Accept': 'application/json',
+  },
+  body: JSON.stringify({
+    email,
+    listIds: [BREVO_LIST_ID],
+    updateEnabled: true
+  }),
+});
 
     const data = await response.json();
 
