@@ -153,17 +153,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-
-    return NextResponse.json(
-      { message: 'Iscrizione completata con successo', subscriber: data },
-      { status: 200 }
-    );
-
-  } catch (error) {
-    console.error('API error:', error);
-    return NextResponse.json(
-      { error: 'Errore interno del server' },
-      { status: 500 }
-    );
-  }
-}
