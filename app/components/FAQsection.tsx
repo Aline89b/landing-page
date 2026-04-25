@@ -11,7 +11,7 @@ export default function FAQsection() {
              Chi può iscrivere la propria struttura sul portale?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-              Qualsiasi proprietario o gestore di una struttura attenta all’ambiente: case vacanza, eco-hotel, agriturismi, B&B sostenibili, glamping, rifugi. L’importante è rispettare alcuni criteri di sostenibilità.
+              Qualsiasi proprietario o gestore di una struttura attenta all&apos;ambiente: case vacanza, eco-hotel, agriturismi, B&B sostenibili, glamping, rifugi. L&apos;importante è rispettare alcuni criteri di sostenibilità.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -19,7 +19,7 @@ export default function FAQsection() {
               Come funziona la gestione delle prenotazioni e dei prezzi?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-             Gestisci in autonomia il tuo annuncio, disponibilità e prenotazioni direttamente dalla piattaforma (proprio come su Airbnb). I pagamenti vengono rilasciati solo dopo il check-in dell’ospite.
+             Gestisci in autonomia il tuo annuncio, disponibilità e prenotazioni direttamente dalla piattaforma (proprio come su Airbnb). I pagamenti vengono rilasciati solo dopo il check-in dell&apos;ospite.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -27,7 +27,7 @@ export default function FAQsection() {
               Quali sono i requisiti per essere considerata una struttura ecosostenibile?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-              Valutiamo l’impatto ambientale, l’uso di energia rinnovabile, la gestione dei rifiuti, l’utilizzo di prodotti locali o biologici, e la promozione di un turismo lento e consapevole. Dopo l’invio dell’annuncio, facciamo una verifica e ti daremo un feedback.
+              Valutiamo l&apos;impatto ambientale, l&apos;uso di energia rinnovabile, la gestione dei rifiuti, l&apos;utilizzo di prodotti locali o biologici, e la promozione di un turismo lento e consapevole. Dopo l&apos;invio dell&apos;annuncio, facciamo una verifica e ti daremo un feedback.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -35,7 +35,7 @@ export default function FAQsection() {
              Quanto costa iscriversi?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-              Niente! Per i primi 6 mesi l’iscrizione è completamente gratuita. Dopo di che, se decidi di continuare, potrai inscriverti all'abbonamento basic a 8.99 euro al mese usufruendo dei servizi premium. Questa offerta è un ringraziamento per i primi iscritti che hanno creduto nel progetto sin dalla sua nascita.
+              Niente! Per i primi 6 mesi l&apos;iscrizione è completamente gratuita. Dopo di che, se decidi di continuare, potrai inscriverti all&apos;abbonamento basic a 8.99 euro al mese usufruendo dei servizi premium. Questa offerta è un ringraziamento per i primi iscritti che hanno creduto nel progetto sin dalla sua nascita.
            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -43,7 +43,7 @@ export default function FAQsection() {
             Come ricevo i pagamenti?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-            Ti metterai d'accordo tu stesso con l'ospite sui dettagli del soggiorno e del pagamento, proprio come faresti normalmente. Noi ci occupiamo solo di mettere in contatto te e i potenziali ospiti, ma non gestiamo direttamente i pagamenti.
+            Ti metterai d&apos;accordo tu stesso con l&apos;ospite sui dettagli del soggiorno e del pagamento, proprio come faresti normalmente. Noi ci occupiamo solo di mettere in contatto te e i potenziali ospiti, ma non gestiamo direttamente i pagamenti.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-6">
@@ -51,7 +51,7 @@ export default function FAQsection() {
             Come attiro i primi clienti?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-            All’inizio ci sarà una campagna promozionale mirata per dare visibilità alle prime strutture del portale, anche tramite social e pubblicità estera. Più il tuo annuncio è curato, più possibilità hai di ricevere richieste!
+            All&apos;inizio ci sarà una campagna promozionale mirata per dare visibilità alle prime strutture del portale, anche tramite social e pubblicità estera. Più il tuo annuncio è curato, più possibilità hai di ricevere richieste!
             </AccordionContent>
           </AccordionItem>
         </Accordion>
