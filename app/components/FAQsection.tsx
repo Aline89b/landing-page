@@ -35,7 +35,7 @@ export default function FAQsection() {
              Quanto costa iscriversi?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-              Niente! Paghi una piccola commissione solo se ricevi una prenotazione. Nessun abbonamento o costo fisso.
+              Niente! Per i primi 6 mesi l’iscrizione è completamente gratuita. Dopo di che, se decidi di continuare, potrai inscriverti all'abbonamento basic a 8.99 euro al mese usufruendo dei servizi premium. Questa offerta è un ringraziamento per i primi iscritti che hanno creduto nel progetto sin dalla sua nascita.
            </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -43,10 +43,10 @@ export default function FAQsection() {
             Come ricevo i pagamenti?
             </AccordionTrigger>
             <AccordionContent className="text-gray-700">
-            Riceverai pagamenti al netto della commissione scelta direttamente sul tuo conto bancario un giorno dopo il check in dell’ospite.
+            Ti metterai d'accordo tu stesso con l'ospite sui dettagli del soggiorno e del pagamento, proprio come faresti normalmente. Noi ci occupiamo solo di mettere in contatto te e i potenziali ospiti, ma non gestiamo direttamente i pagamenti.
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-5">
+          <AccordionItem value="item-6">
             <AccordionTrigger className="text-lg font-semibold">
             Come attiro i primi clienti?
             </AccordionTrigger>

@@ -5,13 +5,16 @@ export default function About() {
 <Card className="w-full max-w-2xl mx-auto mt-10 bg-white shadow-lg rounded-lg p-6">
   <div className="flex flex-col items-center mb-4 w-full">
   <CardHeader className="w-full">
-    <CardTitle className="w-full"> Chi c’è dietro questo progetto?</CardTitle>
+    <CardTitle className="w-full">Un modo diverso di viaggiare</CardTitle>
    
   </CardHeader>
   <CardContent>
-    <p> Ciao! 👋 Mi chiamo Aline, sono appassionata di viaggi autentici e sostenibilità. Questo progetto nasce da un’idea semplice: aiutare strutture attente all’ambiente a farsi conoscere da viaggiatori consapevoli.
+    <p> Sempre più persone scelgono di viaggiare in modo consapevole.
+Allo stesso tempo, sempre più host investono in un’ospitalità attenta all’ambiente e alla comunità.
 
- Se hai una struttura ecosostenibile e vuoi essere tra i primi, ti invito a candidarti: la visibilità sarà tutta concentrata su di voi!</p>
+Questo progetto nasce per far incontrare queste due realtà.
+
+Per dare visibilità a chi fa scelte sostenibili e costruire insieme qualcosa che vada oltre il semplice viaggio.</p>
   </CardContent>
   </div>
   </Card>

@@ -12,8 +12,7 @@ export default function Hero() {
           Hai una struttura ecosostenibile?
         </h1>
         <p className="text-base font-arsenal">
-          Unisciti al primo portale dedicato all’ospitalità consapevole. Raggiungi viaggiatori che condividono i tuoi valori.
-        </p>
+Ti aiutiamo a trovare ospiti in linea con i tuoi valori, entrando in una community che promuove un turismo più consapevole e rispettoso.        </p>
         <CTA />
       </div>
     </section>

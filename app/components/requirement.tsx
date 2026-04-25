@@ -36,7 +36,7 @@ export default function Requirement({
       </div>
       <div className="flex-1">
       
-          <p className={`text-sm ${textColor} opacity-80`}>
+          <p className={`text-lg ${textColor} opacity-80`}>
             {description}
           </p>
      
